@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for taking the time to answer this survey</p>
+    <form id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label">Name<input id="name" name="name" type="text" required placeholder="Enter you name here"/></label>
+        <label for="email" id="email-label">Email<input id="email" name="email" type="email" required placeholder="Enter your email here"/></label>
+        <label for="number" id="number-label">Age (optional)<input id="number" name="number" type="number" min="14" max="99" placeholder="Enter you age here (numbers only)"/></label>
+      </fieldset>
+
+      <fieldset>
+        <label for="dropdown">Which option best describes your current mood?</label>
+        <select id="dropdown">
+          <option value="">Select</option>
+          <option value="1">Happy</option>
+          <option value="2">Sad</option>
+          <option value="3">Angry</option>
+          <option value="4">Prefer not to say</option>
+          <option value="5">Other</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <label>Would you recommend watching movies/series as a hobby?</label>
+        <label for="definitely"><input value="definitely"  name="radio-group" type="radio" class="inline"/>Definitely</label>
+        <label for="maybe"><input value="maybe" name="radio-group" type="radio" class="inline"/>Maybe</label>
+        <label for="not-sure"><input value="not-sure" name="radio-group" type="radio" class="inline"/>Not Sure</label>
+      </fieldset>
+
+      <fieldset>
+        <label>What is your favorite platforms in watching movies/series? (select all that applies)</label>
+        <label><input value="netflix" name="netflix" type="checkbox" class="inline"/>Netflix</label>
+        <label><input value="hbo" name="hbo" type="checkbox" class="inline"/>HBO Max</label>
+        <label><input value="disney-plus" name="disney-plus" type="checkbox" class="inline"/>Disney+</label>
+        <label><input value="amazon" name="amazon" type="checkbox" class="inline"/>Amazon Prime Video</label>
+        <label><input value="youtube" name="youtube" type="checkbox" class="inline"/>Youtube</label>
+        <label><input value="bilibili" name="bilibili" type="checkbox" class="inline"/>Bilibili</label>
+      </fieldset>
+
+      <fieldset>
+        <label>Any comments or suggestions?
+          <textarea rows="5" cols="30" placeholder="Enter you comments/suggestions here..."></textarea>
+        </label>
+        <button id="submit">Submit</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
